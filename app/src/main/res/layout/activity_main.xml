@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="stowell.sisterlywisdom.MainActivity"
+    android:background="@drawable/pink_pattern">
+
+    <RelativeLayout
+        android:id="@+id/intro_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <TextView
+            android:id="@+id/intro_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="\n\nNeed some sisterly wisdom and can't get in touch with Katie or Lily?
+             \n\nWhat's your question?"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:paddingTop="30dp"/>
+
+        <EditText
+            android:id="@+id/question_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/intro_textview"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:hint="Should I..."/>
+
+        <Button
+            android:id="@+id/get_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:layout_below="@+id/question_edittext"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:fontFamily="casual"
+            android:background="@color/backgroundPink"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/answer_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/answer_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="casual"
+            android:text = ""
+            android:paddingTop="80dp"/>
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Any more questions?"
+            android:fontFamily="casual"
+            android:layout_below="@+id/answer_textview"
+            android:background="@color/backgroundPurple"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
